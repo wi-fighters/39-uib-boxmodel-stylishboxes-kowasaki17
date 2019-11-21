@@ -1,12 +1,31 @@
+
 .fake-box {
     position: relative;
 }
 
 .fake-box:before, .fake-box:after {
+    content: "";
     position: absolute;
+    padding: 1rem;
+    width: 18rem;
+    height: 20rem;
+    border: 1px solid #000;
 }
 
 .fake-box:after {
+    content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit eius soluta, vitae officiis magnam ex harum, voluptas placeat suscipit dolorem beatae dolore tempore! Repudiandae quasi id provident voluptatibus deleniti reiciendis?";
     left: 20px;
     top: 20px;
+}
+.box-wrap{
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+}
+.info-box{
+    width: 28%;
+    margin: 25rem 0 1rem 0;
+    padding: 1rem;
+    border: 1px solid #000;
+    box-shadow: 0.5rem 0.5rem 1rem #555;
 }
